@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #fff8f3;
+  --color-card: #ffffff;
+  --color-ink: #43302a;
+  --color-ink-muted: #8a7768;
+  --color-accent: #d97757;
+  --color-accent-soft: #fbe4d8;
+  --color-accent-2: #c97b84;
+  --color-success: #5f9270;
+  --color-success-soft: #e3f0e6;
+  --color-warning: #d99a3d;
+  --color-warning-soft: #fbecd4;
+  --color-danger: #c85c5c;
+  --color-danger-soft: #fbe3e3;
+  --color-border: rgba(67, 48, 42, 0.1);
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-card: var(--color-card);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-accent-2: var(--color-accent-2);
+  --color-success: var(--color-success);
+  --color-success-soft: var(--color-success-soft);
+  --color-warning: var(--color-warning);
+  --color-warning-soft: var(--color-warning-soft);
+  --color-danger: var(--color-danger);
+  --color-danger-soft: var(--color-danger-soft);
+  --font-sans: var(--font-nunito);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Evita el "pull to refresh" y rebote al usarse como PWA standalone en iOS */
+html,
+body {
+  overscroll-behavior-y: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px; /* evita zoom automático en iOS al enfocar */
+}
