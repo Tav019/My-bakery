@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, ClipboardList, CalendarDays, Package, Wallet } from "lucide-react";
+import { Home, ClipboardList, CalendarDays, Package, Wallet, Cake } from "lucide-react";
 
 const ITEMS = [
   { href: "/", label: "Inicio", icon: Home },
   { href: "/pedidos", label: "Pedidos", icon: ClipboardList },
   { href: "/agenda", label: "Agenda", icon: CalendarDays },
+  { href: "/productos", label: "Productos", icon: Cake },
   { href: "/inventario", label: "Inventario", icon: Package },
   { href: "/finanzas", label: "Finanzas", icon: Wallet },
 ];
